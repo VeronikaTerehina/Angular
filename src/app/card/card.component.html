@@ -1,0 +1,21 @@
+<div class="card">
+    <div>
+        <div class="card-title card-line">
+            <span>
+                {{ name }}
+            </span>
+            <img *ngIf="paymentSystem === 'visa'" height="35px" src="../../assets/visa.png" alt="visa">
+        </div>
+        <span class="card-number">
+            {{ number }}
+        </span>
+    </div>
+    <div class="card-line">
+        <span class="card-amount">
+            {{ amount }}
+        </span>
+        <span class="card-date">
+            {{ expirationDate }}
+        </span>
+    </div>
+</div>
